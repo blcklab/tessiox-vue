@@ -1,0 +1,8 @@
+{
+  "items": [
+    {"id":"anyo","label":"Anyo","symbol":"An","description":"3D worlds from data","categoryIds":["rendering"],"visual":{"accent":"#7068e6"}},
+    {"id":"sekai64","label":"Sekai64","symbol":"Sk","description":"Rendering engine","categoryIds":["rendering"],"visual":{"accent":"#4c79ed"}},
+    {"id":"luna","label":"Luna","symbol":"Lu","description":"Moon and phases","categoryIds":["astronomy"],"visual":{"accent":"#9378f0"}},
+    {"id":"helios","label":"Helios","symbol":"He","description":"Sun and daylight","categoryIds":["astronomy"],"visual":{"accent":"#d79735"}}
+  ]
+}

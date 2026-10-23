@@ -1,0 +1,51 @@
+{
+  "name": "@blcklab/tessiox-vue",
+  "version": "0.1.0-alpha.1",
+  "type": "module",
+  "description": "Reusable Vue 3 components for the data-driven Tessiox tile and collection engine",
+  "sideEffects": [
+    "./dist/style.css"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/copy-style.mjs",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "verify:package": "node scripts/verify-package.mjs",
+    "check": "npm run typecheck && npm run build && npm test && npm run verify:package"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "vue": "3.5.22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@blcklab/tessiox": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blcklab/tessiox-vue.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
